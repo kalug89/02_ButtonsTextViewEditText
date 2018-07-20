@@ -17,29 +17,31 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/enterNameEdit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/enterNameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="22dp"
         android:ems="10"
         android:hint="@string/hint_nme"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/showNameButtonbutton"
+        app:layout_constraintStart_toStartOf="@+id/showNameButtonbutton"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="259dp"
-        android:layout_height="51dp"
+        android:id="@+id/showNameButtonbutton"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="200dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginStart="62dp"
         android:background="@color/colorAccent"
         android:text="@string/show_name"
         android:textColor="@android:color/background_light"
@@ -47,6 +49,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/enterNameEdit" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showNameButtonbutton" />
 
 </android.support.constraint.ConstraintLayout>
